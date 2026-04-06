@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio personal de RubenDev - Desarrollador Web y Diseñador.">
+    <title>Portfolio | RubenDev</title>
+    <!-- Google Fonts para una tipografía premium desde el inicio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <!-- Navegación Principal -->
+
+
+    <header class="header-principal">
+        <nav class="nav-principal">
+            <p class="logo-sitio">Ruben<span class="resaltado">Dev</span></p>
+
+            <!--Menú Hamburguesa-->
+            <div class="menu-hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-hamburguesa-cerrar">
+                <span>X</span>
+            </div>
+
+            <ul class="menu-navegacion">
+                <li><a href="#inicio" class="link-inicio">Inicio</a></li>
+                <li><a href="#sobre-mi" class="link-sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos" class="link-proyectos">Proyectos</a></li>
+                <li><a href="#habilidades" class="link-habilidades">Habilidades</a></li>
+                <li><a href="#contacto" class="link-contacto">Inicia tu proyecto hoy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-inicio">
+
+        <!-- Sección Hero / Inicio -->
+        <section class="inicio">
+            <div class="contenido-hero">
+                <div class="texto-hero">
+                    <span id="texto-maquina">💼 Disponible para nuevos proyectos</span>
+                    <h1 class="subtitulo-hero">Hola, soy Ruben. Desarrollador Web, especializado en Frontend y
+                        diseño.
+                    </h1>
+                    <p>Construyendo experiencias digitales modernas, escalables y centradas en el usuario con las
+                        tecnologías más innovadoras del mercado.</p>
+                    <div class="btn-hero">
+                        <a href="#proyectos" class="cta-proyectos">Ver mis proyectos</a>
+                        <a href="#contacto" class="cta-contacto">Trabaja Conmigo</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sobre Mí -->
+        <section class="sobre-mi">
+            <div class="contenido-sobre-mi" data-texto2="About me">
+                <div class="contenedor-img-sobre-mi">
+                    <img class="img-sobre-mi" src="./img/img-sobre-mi.png" alt="">
+                </div>
+                <div class="texto-sobre-mi">
+                    <div class="contenedor-titulo-sobre-mi">
+                        <h2 class="titulo-sobre-mi">Sobre mí</h2>
+                    </div>
+                    <article class="sobre-mi-resumen">
+                        <p>Cuento con experiencia en Fontend. Me apasiona resolver problemas complejos mediante
+                            soluciones tecnológicas elegantes, sencillas y claras.</p>
+                        <p>A lo largo de mi trayectoria, he trabajado en diversos proyectos que me han permitido
+                            perfeccionar mis habilidades en HTML, CSS y JavaScript.</p>
+                        <p>Además del desarrollo web a traves de código tambíen tengo experiencia con CMS como
+                            WordPress.</p>
+                        <div class="contenedor-btn-sobre-mi">
+                            <div class="btn-sobre-mi btn-proyectos">
+                                <span id="contador-proyectos" class="numero-proyectos">0</span>
+                                <a href="">Proyectos Completados</a>
+                            </div>
+                            <div class="btn-sobre-mi btn-contacto">
+                                <span class="numero-años">+2</span>
+                                <a href="">Años en este sector</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos / Portfolio -->
+        <section class="proyectos">
+            <div class="contenido-proyectos">
+
+                <h2 class="titulo-proyectos">Mis Proyectos Destacados</h2>
+
+                <div class="tarjetas-proyectos">
+                    <article class="proyecto-1">
+                        <div class="img-proyectos">
+                            <img class="img-proyecto" src="./img/img-proyecto-web-fitness.png" alt="">
+                            <div class="contenedor-hover-proyecto">
+                                <a href="https://rubensillodev.github.io/team-ruben/">🡽 Ver Proyecto</a>
+                            </div>
+                        </div>
+                        <div class="contenido-proyecto">
+                            <h3 class="nombre-proyecto-1">Nombre del Proyecto 1</h3>
+                            <p class="descripcion-proyecto-1">Descripción breve del proyecto, retos superados y
+                                tecnologías
+                                utilizadas.
+                            </p>
+                            <div class="links-proyectos">
+                                <a href="https://github.com/rubensilloDev" target="_blank"
+                                    class="link-repo-1">Repositorio
+                                    GitHub</a>
+                                <a href="https://rubensillodev.github.io/team-ruben/" target="_blank"
+                                    class="link-demo-1">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proyecto-2">
+                        <div class="img-proyectos">
+                            <img class="img-proyecto" src="./img/img-proyecto-veterinaria.png" alt="">
+                            <div class="contenedor-hover-proyecto">
+                                <a href="https://rubensillodev.github.io/vivalnet/">🡽 Ver Proyecto</a>
+                            </div>
+                        </div>
+                        <div class="contenido-proyecto">
+                            <h3 class="nombre-proyecto-2">Nombre del Proyecto 2</h3>
+                            <p class="descripcion-proyecto-2">Descripción detallada del segundo proyecto destacado.</p>
+                            <div class="links-proyectos">
+                                <a href="https://github.com/rubensilloDev" target="_blank" class="link-repo">Repositorio
+                                    GitHub</a>
+                                <a href="https://rubensillodev.github.io/vivalnet/" target="_blank"
+                                    class="link-demo">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proyecto-3">
+                        <div class="img-proyectos">
+                            <img class="img-proyecto" src="./img/img-proyecto-clinica-guadalquivir.png"
+                                alt="Clinica Guadalquivir">
+                            <div class="contenedor-hover-proyecto">
+                                <a href="https://fisioterapiaguadalquivir.vercel.app/">🡽 Ver Proyecto</a>
+                            </div>
+                        </div>
+                        <div class="contenido-proyecto">
+                            <h3 class="nombre-proyecto-3">Fisioterapia Guadalquivir</h3>
+                            <p class="descripcion-proyecto-3">Descripción detallada del segundo proyecto destacado.</p>
+                            <div class="links-proyectos">
+                                <a href="https://github.com/rubensilloDev" target="_blank"
+                                    class="link-repo-3">Repositorio
+                                    GitHub</a>
+                                <a href="https://rubensillodev.github.io/vivalnet/" target="_blank"
+                                    class="link-demo">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="seccion-habilidades">
+            <div class="contenido-habilidades">
+                <div class="texto-habilidades">
+                    <div class="contenedor-titulo">
+                        <h2 class="titulo-habilidades" data-texto="Tools">Herramientas y Habilidades</h2>
+                    </div>
+                    <div class="parrafo-habilidades">
+                        <p>Aquí tienes un resumen de las tecnologías y herramientas que utilizo para hacer las webs:</p>
+                    </div>
+                </div>
+                <div class="contenedor-lista-habilidades">
+                    <ul class="lista-habilidades">
+                        <li class="skill skill-html"><span class="numero-skill">01</span>HTML5</li>
+                        <li class="skill skill-css"><span class="numero-skill">02</span>CSS3 Vanilla</li>
+                        <li class="skill skill-js"><span class="numero-skill">03</span>JavaScript</li>
+                        <li class="skill skill-IA"><span class="numero-skill">04</span>Inteligencia Artificial</li>
+                        <li class="skill skill-tools"><span class="numero-skill">05</span>GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contacto">
+            <div class="contenido-contacto">
+                <div class="texto-contacto">
+                    <h2 class="titulo-contacto">Hablemos de tu próximo proyecto</h2>
+                    <p class="info-contacto">¿Quieres tener tu propía web que capte clientes? Estoy disponible para
+                        trabajos freelance en los que te ayude a crear tu landing page optimizada para captar clientes.
+
+                    <div class="enlaces-contacto">
+                        <div class="email-contacto">
+                            <span class="emoji-contacto">📩</span>
+                            <a href="mailto:[rubendev@gmail.com]" class="email-texto">rubendev@gmail.com</a>
+                        </div>
+                        <div class="web-contacto">
+                            <span class="emoji-contacto">🌐</span>
+                            <a href="https://rubensillodev.github.io/rubendevfreelance/">Mi web Freelance</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formulario-contacto">
+                    <form class="formulario-contacto" action="#" method="POST">
+                        <label for="nombre-input">Nombre:</label>
+                        <input type="text" class="nombre-input" name="nombre" placeholder="Tu nombre" required>
+
+                        <label for="email-input">Email:</label>
+                        <input type="email" class="email-input" name="email" placeholder="tu@email.com" required>
+
+                        <label for="mensaje-input">Mensaje:</label>
+                        <textarea class="mensaje-input" name="mensaje" placeholder="Hola, me gustaría hablar sobre..."
+                            required></textarea>
+
+                        <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-principal">
+        <div class="contenido-footer">
+            <p class="copyright">&copy; 2026 RubenDev. Todos los derechos reservados.</p>
+            <ul class="redes-sociales">
+                <li>
+                    <a href="https://github.com/tu-usuario" target="_blank" class="social-icon" aria-label="GitHub">
+                        <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M64 0C28.65 0 0 28.65 0 64c0 28.28 18.34 52.28 43.77 61.72 3.2 0.59 4.37-1.39 4.37-3.08 0-1.52-0.06-5.56-0.09-10.91-17.8 3.87-21.56-8.58-21.56-8.58-2.91-7.39-7.11-9.35-7.11-9.35-5.81-3.97 0.44-3.89 0.44-3.89 6.42 0.45 9.8 6.59 9.8 6.59 5.71 9.78 14.99 6.96 18.64 5.32 0.58-4.14 2.23-6.96 4.07-8.56-14.21-1.61-29.15-7.11-29.15-31.63 0-6.98 2.49-12.69 6.58-17.16-0.66-1.61-2.85-8.12 0.63-16.92 0 0 5.37-1.72 17.6 6.56 5.1-1.42 10.57-2.13 16-2.16 5.43 0.03 10.9 0.74 16 2.16 12.22-8.28 17.58-6.56 17.58-6.56 3.49 8.8 1.3 15.31 0.64 16.92 4.1 4.47 6.58 10.18 6.58 17.16 0 24.58-14.96 30.01-29.21 31.58 2.3 1.98 4.35 5.8 4.35 11.69 0 8.44-0.08 15.25-0.08 17.33 0 1.69 1.15 3.7 4.39 3.07C109.66 116.27 128 92.27 128 64c0-35.35-28.65-64-64-64z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tiktok.com/@tu-usuario" target="_blank" class="social-icon" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.06-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.59-1.01-.01 2.62.02 5.24-.02 7.86 0 .62-.03 1.24-.1 1.86-.16 1.36-.8 2.61-1.78 3.58-1.03 1.03-2.4 1.69-3.83 1.93-1.43.24-2.92.1-4.23-.43-1.31-.53-2.42-1.51-3.04-2.72-.63-1.22-.81-2.63-.53-3.98.28-1.35 1.05-2.53 2.12-3.38 1.07-.85 2.45-1.29 3.82-1.25.13 0 .26.01.39.02v4.03c-.13-.01-.26-.02-.39-.02-1.37-.04-2.73.57-3.41 1.77-.69 1.19-.53 2.74.39 3.76.92 1.02 2.43 1.34 3.7.81 1.27-.53 1.91-1.92 1.69-3.26-.02-.12-.03-.24-.03-.36V.02z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/tu-usuario" target="_blank" class="social-icon"
+                        aria-label="Instagram">
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/tu-usuario" target="_blank" class="social-icon"
+                        aria-label="LinkedIn">
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.337v7.225h2.606zm-1.304-8.12a1.512 1.512 0 1 0 0-3.023 1.512 1.512 0 0 0 0 3.023zm10.701 8.12V9.139c0-2.268-1.21-3.324-2.825-3.324-1.304 0-1.889.717-2.213 1.218h-.017V6.17H6.902c.034.735 0 7.225 0 7.225h2.607V9.155c0-.416.03-.833.153-1.131.332-.833 1.096-1.698 2.373-1.698 1.674 0 2.344 1.274 2.344 3.138v4.004h2.607z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
