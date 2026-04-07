@@ -168,7 +168,6 @@ ESTILOS DE LA NAVEGACIÓN
    border-radius: 10px;
 }
 
-
 .header-principal {
    margin: 1% auto;
    border-radius: 10px;
@@ -187,7 +186,7 @@ ESTILOS DE LA NAVEGACIÓN
 .nav-principal {
    display: flex;
    justify-content: space-between;
-   padding: 1% 5%;
+   padding: 0.5% 4%;
    align-items: center;
 }
 
@@ -991,6 +990,7 @@ VERSIÓN MÓVIL
    .menu-hamburguesa {
       display: flex;
       position: relative;
+
    }
 
    .menu-hamburguesa.no-activo {
@@ -1011,11 +1011,12 @@ VERSIÓN MÓVIL
    }
 
    .menu-navegacion {
+      opacity: 0;
       background-color: white;
       /* Blanco puro para mejor contraste */
       height: auto;
       /* Que se adapte al contenido */
-      border-radius: 20px 0 0 20px;
+      border-radius: 0px 0px 20px 20px;
       border: 2px solid var(--color-borde);
       flex-direction: column;
       position: absolute;
@@ -1023,7 +1024,7 @@ VERSIÓN MÓVIL
       text-align: right;
       top: 100%;
       right: 0;
-      width: 55%;
+      width: 100%;
       transition: 0.5s all ease;
       transform: translateX(110%);
       box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
@@ -1031,7 +1032,20 @@ VERSIÓN MÓVIL
       /* Separación entre enlaces del menú */
    }
 
+   .menu-navegacion li {
+      text-align: center;
+   }
+
+   .menu-navegacion li:hover {
+      transform: none;
+   }
+
+   .menu-navegacion li a::after {
+      display: none;
+   }
+
    .menu-navegacion.activo {
+      opacity: 1;
       display: flex;
       transform: translateX(0);
    }
