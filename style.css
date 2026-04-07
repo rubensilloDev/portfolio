@@ -1042,7 +1042,12 @@ VERSIÓN MÓVIL
 
    .menu-navegacion {
       opacity: 0;
-      display: flex;
+      background-color: white;
+      /* Blanco puro para mejor contraste */
+      height: auto;
+      /* Que se adapte al contenido */
+      border-radius: 0px 0px 20px 20px;
+      border: 2px solid var(--color-borde);
       flex-direction: column;
       background-color: var(--color-blanco);
       position: absolute;
@@ -1055,7 +1060,8 @@ VERSIÓN MÓVIL
       transform: translateX(110%);
       visibility: hidden;
       /* Evita que el navegador cree scroll lateral */
-      pointer-events: none; /* ← Cero interferencia cuando está cerrado */
+      pointer-events: none;
+      /* ← Cero interferencia cuando está cerrado */
       box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
       gap: 1.5rem;
       /* Separación entre enlaces del menú */
@@ -1080,7 +1086,8 @@ VERSIÓN MÓVIL
       display: flex;
       transform: translateX(0);
       z-index: 999999;
-      pointer-events: auto; /* ← Recupera su función al abrirse */
+      pointer-events: auto;
+      /* ← Recupera su función al abrirse */
    }
 
    /* 2. INICIO / HERO - Ajustes de espaciado */
@@ -1145,7 +1152,8 @@ VERSIÓN MÓVIL
    .seccion-habilidades,
    .proyectos,
    footer {
-      overflow: hidden; /* Cortamos solo el contenido pesado */
+      overflow: hidden;
+      /* Cortamos solo el contenido pesado */
       position: relative;
    }
 
