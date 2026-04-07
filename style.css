@@ -1041,6 +1041,7 @@ VERSIÓN MÓVIL
    }
 
    .menu-navegacion {
+      overflow-x: hidden !important;
       opacity: 0;
       background-color: white;
       /* Blanco puro para mejor contraste */
@@ -1057,7 +1058,7 @@ VERSIÓN MÓVIL
       right: 0;
       width: 100%;
       transition: 0.5s all ease;
-      transform: translateX(110%);
+      transform: translateY(-20px);
       visibility: hidden;
       /* Evita que el navegador cree scroll lateral */
       pointer-events: none;
