@@ -104,13 +104,16 @@ ESTILOS GENERALES DE LA WEB
 html,
 body {
    width: 100%;
-   overflow-x: hidden;
    position: relative;
 }
 
 body {
    font-family: var(--fuente-principal);
    background-color: var(--color-fondo);
+}
+
+html {
+   overflow-x: clip;
 }
 
 /* Reseteo general */
@@ -312,6 +315,7 @@ ESTILOS AL HERO
 }
 
 .contenido-hero span {
+   display: flex;
    color: var(--color-azul-fuerte);
    font-weight: var(--peso-semibold);
    background-color: var(--color-azul-suave);
@@ -994,6 +998,18 @@ VERSIÓN MÓVIL
 @media (max-width: 768px) {
 
    /* 1. NAVEGACIÓN - MENÚ HAMBURGUESA */
+   .header-principal {
+      /* Quitamos el overflow: hidden porque recortaba el menú */
+   }
+
+   .bloquear-scroll {
+      overflow: hidden !important;
+      height: 100vh !important;
+      width: 100vw !important;
+      touch-action: none;
+      /* Bloquea el rastro del dedo sin saltar al inicio */
+   }
+
    .menu-hamburguesa {
       display: flex;
       position: relative;
@@ -1034,6 +1050,8 @@ VERSIÓN MÓVIL
       width: 100%;
       transition: 0.5s all ease;
       transform: translateX(110%);
+      visibility: hidden;
+      /* Evita que el navegador cree scroll lateral */
       box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
       gap: 1.5rem;
       /* Separación entre enlaces del menú */
@@ -1053,8 +1071,11 @@ VERSIÓN MÓVIL
 
    .menu-navegacion.activo {
       opacity: 1;
+      visibility: visible;
+      /* Se hace visible solo al abrir */
       display: flex;
       transform: translateX(0);
+      z-index: 999999;
    }
 
    /* 2. INICIO / HERO - Ajustes de espaciado */

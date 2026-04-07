@@ -6,20 +6,17 @@ menuHamburguesa.addEventListener('click', () => {
     menuHamburguesa.classList.add('no-activo')
     menuNavegacion.classList.toggle('activo')
     menuHambuguesaCerrar.classList.toggle('activo')
-    document.body.style.overflow = 'hidden'; // Bloqueamos el scroll al abrir el menu
+    document.documentElement.classList.add('bloquear-scroll');
 });
 
 menuHambuguesaCerrar.addEventListener('click', () => {
     menuNavegacion.classList.toggle('activo')
     menuHambuguesaCerrar.classList.toggle('activo')
     menuHamburguesa.classList.remove('no-activo')
-    document.body.style.overflow = 'auto';  // Desbloqueas al cerrar
-
+    document.documentElement.classList.remove('bloquear-scroll');
 });
 
-if (menuNavegacion.classList.contains('activo')) {
-    document.body.style.overflow = 'hidden'
-}
+
 
 
 // ANIMACION DE CONTADOR 
