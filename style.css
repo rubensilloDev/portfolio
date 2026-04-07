@@ -101,10 +101,16 @@
 ESTILOS GENERALES DE LA WEB
 -----------------------------------------------------------*/
 
+html,
+body {
+   width: 100%;
+   overflow-x: hidden;
+   position: relative;
+}
+
 body {
    font-family: var(--fuente-principal);
    background-color: var(--color-fondo);
-   overflow-x: hidden;
 }
 
 /* Reseteo general */
@@ -112,6 +118,7 @@ body {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+
 }
 
 a {
